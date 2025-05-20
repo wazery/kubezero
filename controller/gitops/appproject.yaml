@@ -10,11 +10,9 @@ spec:
     - group: '*'
       kind: '*'
   destinations:
-    - name: in-cluster
+    - server: https://kubernetes.default.svc
       namespace: kubezero
-    - name: in-cluster
+    - server: https://kubernetes.default.svc
       namespace: crossplane-system
-    - namespace: '*'
-      server: '*'
   sourceRepos:
     - https://github.com/wazery/kubezero
