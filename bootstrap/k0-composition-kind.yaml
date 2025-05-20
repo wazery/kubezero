@@ -1,0 +1,21 @@
+apiVersion: apiextensions.crossplane.io/v1
+kind: Composition
+metadata:
+  name: kind-k0-composition
+spec:
+  compositeTypeRef:
+    apiVersion: platform.kubezero.io/v1alpha1
+    kind: KubernetesCluster
+  resources:
+    - name: simulated-kind
+      base:
+        apiVersion: v1
+        kind: Secret
+        type: Opaque
+        metadata:
+          name: simulated-kubeconfig
+        data:
+          kubeconfig: ""
+      patches:
+        - fromFieldPath: spec.kubeconfigSecretName
+          toFieldPath: metadata.name
