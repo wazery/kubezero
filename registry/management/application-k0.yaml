@@ -5,7 +5,7 @@ metadata:
   namespace: kubezero
 spec:
   destination:
-    server: https://192.168.x.x:56408  # the same server address in your kubeconfig
+    server: https://192.168.178.48:56408
     namespace: kubezero
   project: management
   source:
