@@ -2,11 +2,11 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: kubezero-management
-  namespace: argocd
+  namespace: kubezero
 spec:
   destination:
     name: in-cluster
-    namespace: argocd
+    namespace: kubezero
   project: default
   source:
     repoURL: https://github.com/kubezero/kubezero
