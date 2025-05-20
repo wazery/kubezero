@@ -13,7 +13,7 @@ spec:
   source:
     repoURL: https://github.com/DevOpsHiveHQ/kubezero
     path: controller/crossplane
-    targetRevision: main
+    targetRevision: HEAD
   destination:
     name: in-cluster
     namespace: crossplane-system

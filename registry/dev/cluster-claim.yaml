@@ -1,0 +1,6 @@
+apiVersion: platform.kubezero.io/v1alpha1
+kind: Cluster
+metadata:
+  name: local-kind-cluster
+spec:
+  kubeconfigSecretName: kind-kubeconfig-local-dev

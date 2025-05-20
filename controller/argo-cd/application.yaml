@@ -13,7 +13,7 @@ spec:
   source:
     repoURL: https://github.com/DevOpsHiveHQ/kubezero
     path: controller/argo-cd
-    targetRevision: main
+    targetRevision: HEAD
   destination:
     name: in-cluster
     namespace: kubezero

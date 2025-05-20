@@ -1,0 +1,7 @@
+resources:
+  - ../../../modules/argocd
+  - ../../../modules/crossplane/controller
+  - ../../../modules/cert-manager
+  - ../../../modules/ingress-nginx
+  - ../../../modules/external-dns
+  - ../../../modules/external-secrets
