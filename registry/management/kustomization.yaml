@@ -2,7 +2,9 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
+  - application-k0.yaml
   - ../../stacks/management
+  - ../../controller/gitops/application-management.yaml
 
 generators:
   - ../../stacks/k8s-essentials/helm-charts

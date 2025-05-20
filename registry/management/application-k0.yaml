@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kubezero-k0
+  namespace: kubezero
+spec:
+  destination:
+    server: https://192.168.x.x:56408  # the same server address in your kubeconfig
+    namespace: kubezero
+  project: management
+  source:
+    repoURL: https://github.com/wazery/kubezero
+    targetRevision: main
+    path: stacks/management/overlays/default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

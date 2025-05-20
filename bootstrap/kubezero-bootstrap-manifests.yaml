@@ -108,6 +108,8 @@ apiVersion: apiextensions.crossplane.io/v1
 kind: Composition
 metadata:
   name: kind-k0-composition
+  labels:
+    type: kind-k0
 spec:
   compositeTypeRef:
     apiVersion: platform.kubezero.io/v1alpha1
@@ -132,6 +134,9 @@ metadata:
   name: k0
 spec:
   kubeconfigSecretName: k0-kind-cluster
+  compositionSelector:
+    matchLabels:
+      type: kind-k0
 # ---
 # apiVersion: v1
 # kind: Secret

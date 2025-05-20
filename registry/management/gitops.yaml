@@ -1,0 +1,2 @@
+applications:
+  - path: registry/management/application-k0.yaml
