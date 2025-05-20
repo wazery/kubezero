@@ -1,0 +1,2 @@
+applications:
+  - path: registry/dev/application-kind.yaml
