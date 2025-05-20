@@ -2,3 +2,4 @@ resources:
   - ../../../modules/cert-manager
   - ../../../modules/external-dns
   - ../../../modules/external-secrets
+  - ../../../modules/ingress-nginx
