@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/wazery/kubezero
     targetRevision: main
-    path: stacks/management/overlays/default
+    path: registry/management
   syncPolicy:
     automated:
       prune: true
