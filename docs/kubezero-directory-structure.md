@@ -5,7 +5,7 @@ A clearly defined structure to support scalable, modular, GitOps-native Kubernet
 
 ---
 
-## ✅ Directory Responsibilities
+## Directory Responsibilities
 
 ### `modules/` → **Reusable building blocks (primitives)**
 
@@ -96,7 +96,7 @@ This keeps your stacks thin, readable, and DRY.
 
 ---
 
-## 📌 Summary Table
+## Summary Table
 
 | Directory     | Responsibility                                         | Contains                          |
 |---------------|--------------------------------------------------------|------------------------------------|
