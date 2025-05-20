@@ -1,2 +1,4 @@
 resources:
   - application-kind.yaml
+  - kubeconfig-secret.yaml
+  - cluster-claim.yaml
