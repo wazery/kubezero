@@ -52,9 +52,9 @@ metadata:
 spec:
   project: controller
   source:
-    repoURL: https://github.com/DevOpsHiveHQ/kubezero
+    repoURL: https://github.com/wazery/kubezero
     path: bootstrap
-    targetRevision: HEAD
+    targetRevision: main
   destination:
     name: in-cluster
     namespace: kubezero

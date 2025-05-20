@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/kubezero/kubezero
-    targetRevision: HEAD
+    targetRevision: main
     path: stacks/management/overlays/default
   syncPolicy:
     automated:
