@@ -13,7 +13,7 @@ spec:
     - namespace: '*'
       server: '*'
   sourceRepos:
-    - https://github.com/DevOpsHiveHQ/kubezero
+    - https://github.com/wazery/kubezero
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
