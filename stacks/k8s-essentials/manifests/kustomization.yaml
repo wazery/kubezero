@@ -4,5 +4,5 @@ kind: Kustomization
 
 resources:
   - ../../../modules/cert-manager
-  - ../../../modules/external-dns
+  # - ../../../modules/external-dns
   - ../../../modules/external-secrets

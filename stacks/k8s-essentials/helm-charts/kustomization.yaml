@@ -4,5 +4,5 @@ kind: Kustomization
 
 resources:
   - ../../../modules/cert-manager/helm-chart
-  - ../../../modules/external-dns/helm-chart
+  # - ../../../modules/external-dns/helm-chart
   - ../../../modules/external-secrets/helm-chart

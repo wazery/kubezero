@@ -3,6 +3,7 @@ kind: Kustomization
 
 resources:
   - ./infrastructure/namespace.yaml
+  - ../../stacks/k8s-essentials/manifests/
 
 generators:
   - ./infrastructure
