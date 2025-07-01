@@ -12,7 +12,7 @@ spec:
     - namespace: '*'
       server: '*'
   sourceRepos:
-    - https://github.com/kubezero/kubezero
+    - https://github.com/wazey/kubezero
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
@@ -26,9 +26,9 @@ metadata:
 spec:
   project: aws-worker-infrastructure
   source:
-    repoURL: https://github.com/kubezero/kubezero
+    repoURL: https://github.com/wazey/kubezero
     path: registry/aws-worker/infrastructure
-    targetRevision: main
+    targetRevision: w-cli
   destination:
     name: in-cluster
   syncPolicy:
@@ -50,9 +50,9 @@ metadata:
 spec:
   project: aws-worker
   source:
-    repoURL: https://github.com/kubezero/kubezero
+    repoURL: https://github.com/wazey/kubezero
     path: registry/aws-worker/applications
-    targetRevision: main
+    targetRevision: w-cli
   destination:
     # NOTE: Change the name according to your cluster.
     name: aws-worker
