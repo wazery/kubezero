@@ -787,7 +787,7 @@ func configureLocalMode() error {
 	fmt.Println("   🚀 Setting up GitHub fork workflow...")
 
 	// Step 1: Open GitHub fork URL in browser
-	forkURL := "https://github.com/kubezero/kubezero/fork"
+	forkURL := "https://github.com/wazery/kubezero/fork"
 	fmt.Printf("   🌐 Opening GitHub fork page: %s\n", forkURL)
 	if err := openBrowser(forkURL); err != nil {
 		fmt.Printf("   ⚠️  Could not open browser automatically: %v\n", err)
@@ -973,12 +973,12 @@ func updateRepoURLsToFork(githubUsername string) error {
 	if err != nil {
 		return fmt.Errorf("failed to get kubezero directory path: %w", err)
 	}
-	
+
 	currentBranch, err := getCurrentBranch(kubeZeroDir)
 	if err != nil {
 		return fmt.Errorf("failed to get current branch: %w", err)
 	}
-	
+
 	forkRepoURL := fmt.Sprintf("https://github.com/%s/kubezero", githubUsername)
 
 	// Files to update
@@ -1028,17 +1028,17 @@ func updateRepoURLInFile(filePath, newRepoURL, targetRevision string) error {
 
 	// Replace GitHub kubezero/kubezero URLs with the fork URL
 	oldContent := string(content)
-	newContent := strings.ReplaceAll(oldContent, "https://github.com/kubezero/kubezero", newRepoURL)
+	newContent := strings.ReplaceAll(oldContent, "https://github.com/wazery/kubezero", newRepoURL)
 
 	// Also update sourceRepos sections
 	lines := strings.Split(newContent, "\n")
 	for i, line := range lines {
-		if strings.Contains(line, "- https://github.com/kubezero/kubezero") {
-			lines[i] = strings.Replace(line, "https://github.com/kubezero/kubezero", newRepoURL, 1)
+		if strings.Contains(line, "- https://github.com/wazery/kubezero") {
+			lines[i] = strings.Replace(line, "https://github.com/wazery/kubezero", newRepoURL, 1)
 		}
 		// Update targetRevision from "main" to current branch
-		if strings.Contains(line, "targetRevision: main") {
-			lines[i] = strings.Replace(line, "targetRevision: main", fmt.Sprintf("targetRevision: %s", targetRevision), 1)
+		if strings.Contains(line, "targetRevision: w-cli") {
+			lines[i] = strings.Replace(line, "targetRevision: w-cli", fmt.Sprintf("targetRevision: %s", targetRevision), 1)
 		}
 	}
 	newContent = strings.Join(lines, "\n")

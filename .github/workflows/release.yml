@@ -104,7 +104,7 @@ jobs:
           echo "### Linux/macOS" >> release-notes.md
           echo '```bash' >> release-notes.md
           echo "# Download the appropriate binary for your platform" >> release-notes.md
-          echo "wget https://github.com/kubezero/kubezero/releases/download/${{ github.ref_name }}/kubezero-linux-amd64" >> release-notes.md
+          echo "wget https://github.com/wazery/kubezero/releases/download/${{ github.ref_name }}/kubezero-linux-amd64" >> release-notes.md
           echo "chmod +x kubezero-linux-amd64" >> release-notes.md
           echo "sudo mv kubezero-linux-amd64 /usr/local/bin/kubezero" >> release-notes.md
           echo '```' >> release-notes.md

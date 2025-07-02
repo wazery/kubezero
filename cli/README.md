@@ -15,12 +15,12 @@ A modern Go-based CLI tool for bootstrapping and managing KubeZero platform infr
 
 ### Download from Releases
 
-Visit the [releases page](https://github.com/kubezero/kubezero/releases) and download the appropriate binary for your platform:
+Visit the [releases page](https://github.com/wazery/kubezero/releases) and download the appropriate binary for your platform:
 
 #### Linux/macOS
 ```bash
 # Download the appropriate binary for your platform
-wget https://github.com/kubezero/kubezero/releases/latest/download/kubezero-linux-amd64
+wget https://github.com/wazery/kubezero/releases/latest/download/kubezero-linux-amd64
 chmod +x kubezero-linux-amd64
 sudo mv kubezero-linux-amd64 /usr/local/bin/kubezero
 ```
@@ -41,7 +41,7 @@ docker run --rm -it -v $(pwd):/workspace -w /workspace ghcr.io/kubezero/kubezero
 ### Build from Source
 
 ```bash
-git clone https://github.com/kubezero/kubezero.git
+git clone https://github.com/wazery/kubezero.git
 cd kubezero/cli
 go build -o kubezero .
 ```

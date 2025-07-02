@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/kubezero/kubezero/cli/cmd"
+	"github.com/wazery/kubezero/cli/cmd"
 )
 
 // Version information - set via ldflags during build

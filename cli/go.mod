@@ -1,4 +1,4 @@
-module github.com/kubezero/kubezero/cli
+module github.com/wazery/kubezero/cli
 
 go 1.21
 
