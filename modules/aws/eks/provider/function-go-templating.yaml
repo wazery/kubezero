@@ -9,6 +9,6 @@ spec:
 apiVersion: pkg.crossplane.io/v1
 kind: Configuration
 metadata:
-  name: management-configuration-aws-eks
+  name: configuration-aws-eks
 spec:
   package: xpkg.upbound.io/wazery/configuration-aws-eks:v0.1.26
