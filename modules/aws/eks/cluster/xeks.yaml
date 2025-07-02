@@ -22,10 +22,3 @@ spec:
   writeConnectionSecretToRef:
     name: aws-eks-kubeconfig
     namespace: crossplane-system
-  publishConnectionDetailsTo:
-    name: configuration-aws-eks-argocd-cluster
-    configRef:
-      name: default
-    metadata:
-      labels:
-        argocd.argoproj.io/secret-type: cluster
