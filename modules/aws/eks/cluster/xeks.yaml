@@ -1,5 +1,5 @@
 ---
-apiVersion: aws.platform.upbound.io/v1alpha1
+apiVersion: aws.platform.upbound.io/v1alpha2
 kind: XEKS
 metadata:
   name: aws-eks
