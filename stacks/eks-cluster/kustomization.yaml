@@ -4,4 +4,4 @@ kind: Kustomization
 
 resources:
   - ../../modules/aws/eks/cluster
-  - ./cluster-secret.yaml
+  # - ./cluster-secret.yaml
