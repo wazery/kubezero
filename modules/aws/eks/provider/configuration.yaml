@@ -4,4 +4,4 @@ kind: Configuration
 metadata:
   name: management-configuration-aws-eks
 spec:
-  package: xpkg.upbound.io/wazery/configuration-aws-eks:v0.1.81
+  package: xpkg.upbound.io/wazery/configuration-aws-eks:v0.1.82
