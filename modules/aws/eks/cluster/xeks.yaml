@@ -23,9 +23,30 @@ spec:
     name: aws-eks-kubeconfig
     namespace: crossplane-system
   publishConnectionDetailsTo:
-    name: configuration-aws-eks-argocd-cluster
+    name: my-cluster-connection
     configRef:
-      name: default
+      name: argocd-cluster-template
     metadata:
       labels:
         argocd.argoproj.io/secret-type: cluster
+      annotations:
+        example.com/managed-by: crossplane
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-cluster-template
+data:
+  template: |
+    name: {{ .name }}
+    server: {{ .server }}
+    config: |
+      {
+        "awsAuthConfig": {
+          "clusterName": "{{ .clusterName }}"
+        },
+        "tlsClientConfig": {
+          "insecure": false,
+          "caData": "{{ .certificate }}"
+        }
+      } 
