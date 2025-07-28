@@ -5,3 +5,5 @@ metadata:
   name: management-configuration-aws-eks
 spec:
   package: xpkg.upbound.io/wazery/configuration-aws-eks:v0.1.88
+  # Enable external secret stores feature in the bundled AWS provider
+  enableExternalSecretStores: true
